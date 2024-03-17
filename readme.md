@@ -12,6 +12,12 @@ Welcome to the Coffee Shop UI project built with React Native! This repository c
   - **Coffee Beans Cards**: Highlighting different types of coffee beans available.
   - **Bottom Card**: Providing additional options or actions for users at the bottom of the screen.
 
+- **Cart Screen**: The cart screen where user  can explore various features related to cart.
+  - **Coffee Cards**: Displaying the option to add more coffee & coffee beans using + button and decrease coffee & coffee beans using - button and showing sizes are available.
+  - **Bottom Card**: Providing additional options or actions for users at the bottom of the screen.
+
+- **Favorite Screen**: The favorite screen where users can explore his favorite coffee which he add in favorite section .
+ 
 ## Technologies Used
 
 - React Native

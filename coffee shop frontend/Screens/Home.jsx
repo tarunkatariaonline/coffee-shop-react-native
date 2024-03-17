@@ -10,11 +10,11 @@ import Icon from 'react-native-vector-icons/Entypo';
 import BottomBar from '../Components/BottomBar'
 
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <View style={{backgroundColor:"#0c0f14",flex:1,paddingTop:0,paddingBottom:0}}>
       
-    <StatusBar style="auto"  backgroundColor='black'  />
+    <StatusBar style="auto"  backgroundColor='#0c0f14' />
     <ScrollView style={{paddingLeft:20,paddingRight:20,marginBottom:70}}>
   <Header  />
   <Text style={styles.textheading}>Find the best </Text>
@@ -26,7 +26,7 @@ const Home = () => {
   <CardSlider/>
   </ScrollView>
 
-  <BottomBar nav={"home"}/>
+  <BottomBar nav={"home"} navigation={navigation}/>
 
   </View>
   )
