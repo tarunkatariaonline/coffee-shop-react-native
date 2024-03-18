@@ -15,7 +15,7 @@ const cardData = [
         id:4
     }
 ]
-const CardSlider = () => {
+const CardSlider = ({navigation}) => {
   return (
     <View>
      
@@ -23,7 +23,7 @@ const CardSlider = () => {
         data={cardData}
         horizontal={true}
         
-        renderItem={({item}) =>  <Card/>}
+        renderItem={({item}) =>  <Card navigation={navigation} />}
         keyExtractor={item => item.id}
       />
 

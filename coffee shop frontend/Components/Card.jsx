@@ -2,9 +2,9 @@ import { StyleSheet, Text, TouchableOpacity, View,Image } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/AntDesign';
 
-const Card = () => {
+const Card = ({navigation}) => {
   return (
-    <TouchableOpacity style={styles.cardcontainer}>
+    <TouchableOpacity onPress={()=>navigation.navigate('Coffeedetails')} style={styles.cardcontainer}>
       <View style={styles.imagecontainer}>
 
         <View style={styles.rating}>

@@ -14,7 +14,7 @@ const BottomBar = ({nav,navigation}) => {
   <Icon name="heart" onPress={()=>navigation.navigate('Favorite')} size={28} color={(nav==="favorite")?"#d17842":"gray"}  />
   </TouchableOpacity>
   <TouchableOpacity>
-  <Icon name="bell" size={28} color={(nav==="order")?"#d17842":"gray"}  />
+  <Icon name="bell" onPress={()=>navigation.navigate('Order')} size={28} color={(nav==="order")?"#d17842":"gray"}  />
   </TouchableOpacity>
   </View>
   )

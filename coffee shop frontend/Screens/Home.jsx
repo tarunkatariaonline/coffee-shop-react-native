@@ -21,9 +21,9 @@ const Home = ({navigation}) => {
   <Text style={styles.textheading}>coffee for you</Text>
   <Searchbar/>
   <Slider/>
-  <CardSlider/>
+  <CardSlider navigation={navigation}/>
   <Text  style={{color:"white",fontSize:24,marginTop:20,fontWeight:"700"}}>Coffee Beans</Text>
-  <CardSlider/>
+  <CardSlider navigation={navigation}/>
   </ScrollView>
 
   <BottomBar nav={"home"} navigation={navigation}/>
