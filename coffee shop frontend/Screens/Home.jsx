@@ -8,6 +8,7 @@ import Card from '../Components/Card'
 import CardSlider from '../Components/CardSlider'
 import Icon from 'react-native-vector-icons/Entypo';
 import BottomBar from '../Components/BottomBar'
+import Gradiant from '../Components/Gradiant'
 
 
 const Home = ({navigation}) => {
@@ -24,6 +25,7 @@ const Home = ({navigation}) => {
   <CardSlider navigation={navigation}/>
   <Text  style={{color:"white",fontSize:24,marginTop:20,fontWeight:"700"}}>Coffee Beans</Text>
   <CardSlider navigation={navigation}/>
+
   </ScrollView>
 
   <BottomBar nav={"home"} navigation={navigation}/>

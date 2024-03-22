@@ -1,10 +1,11 @@
 import { StyleSheet, Text, TouchableOpacity, View,Image } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/AntDesign';
-
+import { LinearGradient } from 'expo-linear-gradient';
 const Card = ({navigation}) => {
   return (
-    <TouchableOpacity onPress={()=>navigation.navigate('Coffeedetails')} style={styles.cardcontainer}>
+    <TouchableOpacity onPress={()=>navigation.navigate('Coffeedetails')} >
+      <LinearGradient colors={['rgba(37, 42, 50, 1)','rgba(38, 43, 51, 0)']} style={styles.cardcontainer}>
       <View style={styles.imagecontainer}>
 
         <View style={styles.rating}>
@@ -35,6 +36,7 @@ const Card = ({navigation}) => {
             </TouchableOpacity>
         </View>
       </View>
+      </LinearGradient>
     </TouchableOpacity>
   )
 }
@@ -45,7 +47,7 @@ const styles = StyleSheet.create({
     cardcontainer:{
      height:300,
      width:170,
-     backgroundColor:"rgba(140, 140, 140,0.2)",
+     
      borderRadius:20,
      padding:15,
      marginTop:20,

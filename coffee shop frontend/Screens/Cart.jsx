@@ -8,8 +8,8 @@ import PaymentBar from '../Components/PaymentBar'
 const Cart = ({navigation}) => {
   return (
 
-    <View style={{backgroundColor:"#0c0f14",flex:1,paddingLeft:20,paddingRight:20,alignItems:"center"}}>
-    <ScrollView style={{marginBottom:120}} >
+    <View style={{backgroundColor:"#0c0f14",flex:1,alignItems:"center"}}>
+    <ScrollView style={{marginBottom:120,paddingLeft:20,paddingRight:20}} >
       
     <StatusBar style="auto"  backgroundColor='#0c0f14'  />
    

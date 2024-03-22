@@ -3,7 +3,7 @@ import React from 'react'
 
 const PaymentBar = () => {
   return (
-    <View style={{height:70,position:"absolute",bottom:50,width:"100%",backgroundColor:"#0c0f14",flexDirection:"row",alignItems:"center",justifyContent:"space-between"}}>
+    <View style={{height:70,position:"absolute",bottom:50,width:"100%",backgroundColor:"#0c0f14",flexDirection:"row",alignItems:"center",justifyContent:"space-between",padding:20}}>
       <View style={{height:70,justifyContent:"center"}}>
         <Text style={{color:"gray",fontSize:16}}>Total Price</Text>
         <View style={{flexDirection:"row"}}>
@@ -12,7 +12,7 @@ const PaymentBar = () => {
         </View>
 
       </View>
-      <TouchableOpacity style={{height:55,width:220,backgroundColor:"#d17842",justifyContent:"center",alignItems:"center",borderRadius:15}}> 
+      <TouchableOpacity style={{height:55,width:200,backgroundColor:"#d17842",justifyContent:"center",alignItems:"center",borderRadius:15}}> 
         <Text style={{fontSize:20,color:"white"}}>Pay</Text>
       </TouchableOpacity>
     </View>

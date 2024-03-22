@@ -1,9 +1,11 @@
 import { StyleSheet, Text, View ,Image, TouchableOpacity} from 'react-native'
 import React from 'react'
+import { LinearGradient } from 'expo-linear-gradient'
 
 const CartCard = () => {
   return (
-    <View style={styles.cartcardcontainer}>
+    <LinearGradient colors={['rgba(38, 43, 51, 1)', 'rgba(38, 43, 51, 0)']} style={styles.cartcardcontainer}>
+    
       <View style={styles.imagecontainer}>
       <Image
         style={styles.image}
@@ -98,7 +100,7 @@ const CartCard = () => {
       </View>
 
       
-    </View>
+    </LinearGradient>
   )
 }
 
@@ -107,7 +109,7 @@ export default CartCard
 const styles = StyleSheet.create({
     cartcardcontainer:{
         height:310,
-        backgroundColor:"rgba(140, 140, 140,0.2)",
+      
         width:"100%",
         padding:20,
         borderRadius:20,

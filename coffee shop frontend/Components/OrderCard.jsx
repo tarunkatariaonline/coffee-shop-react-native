@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View,Image } from 'react-native'
 import React from 'react'
+import { LinearGradient } from 'expo-linear-gradient'
 
 const OrderCard = () => {
   return (
@@ -13,7 +14,7 @@ const OrderCard = () => {
             <Text style={{color:"white",fontSize:16,fontWeight:"bold",paddingLeft:2}}>20th march 16:23</Text>
             <Text style={{color:"#d17842",fontSize:16,fontWeight:"bold",paddingRight:5}}>$ 74.20</Text>
         </View>
-    <View style={styles.ordercardcontainer} >
+    <LinearGradient colors={['rgba(38, 43, 51, 1)', 'rgba(38, 43, 51, 0)']} style={styles.ordercardcontainer} >
         <View style={{flexDirection:"row",justifyContent:"space-between",alignItems:"center"}}>
 
        
@@ -112,7 +113,7 @@ const OrderCard = () => {
    
      
       
-       </View>
+       </LinearGradient>
     </View>
   )
 }
@@ -123,7 +124,7 @@ const styles = StyleSheet.create({
 ordercardcontainer:{
     width:"100%",
     minHeight:150,
-    backgroundColor:"rgba(140, 140, 140,0.2)",
+    
     borderRadius:20,
     padding:20,
     marginTop:10

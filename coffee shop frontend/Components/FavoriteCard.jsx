@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View,Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import  Icon from 'react-native-vector-icons/Entypo'
+import { LinearGradient } from 'expo-linear-gradient'
 
 const FavoriteCard = () => {
   return (
@@ -54,10 +55,10 @@ const FavoriteCard = () => {
        <Icon name='heart' size={20} color={"red"}/>
       </TouchableOpacity>
       </View>
-      <View style={{padding:15}}>
+      <LinearGradient colors={['rgba(38, 43, 51, 1)', 'rgba(38, 43, 51, 0)']} style={{padding:15}}>
         <Text style={{color:"white",fontSize:22,fontWeight:"500"}}>Description</Text>
         <Text style={{color:"white",fontSize:16,fontWeight:"300"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates itaque at saepe quo, officia quia quaerat magnam voluptate architecto aut </Text>
-      </View>
+      </LinearGradient>
     </View>
   )
 }
@@ -68,7 +69,7 @@ const styles = StyleSheet.create({
     favcard:{
         width:"100%",
         height:590,
-        backgroundColor:"rgba(143, 141, 141,0.2)",
+      
         borderRadius:20,
         marginTop:10,
         marginBottom:10
